@@ -42,13 +42,13 @@ class Prioritizer:
 
         # Category importance scores (0-10)
         self.category_scores = {
-            'Regulatory News': 10,  # HIGHEST PRIORITY
-            'Funding': 10,
-            'Executive Moves': 9,
+            'Marketing Campaigns': 10,  # #1 HIGHEST PRIORITY
+            'Executive Moves': 10,       # #2 HIGHEST PRIORITY
+            'Promotions': 9,             # #3 HIGH PRIORITY
+            'Funding': 8,
             'Product Updates': 8,
             'Partnerships': 7,
-            'Marketing Campaigns': 6,
-            'Promotions': 4,
+            'Regulatory News': 6,
             'Other': 5
         }
 
