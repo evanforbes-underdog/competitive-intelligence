@@ -1,6 +1,11 @@
 """Database migrations and initialization."""
+import sys
 from pathlib import Path
-from .models import create_tables, get_engine
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+
+from src.database.models import create_tables, get_engine
 
 
 def initialize_database(database_path: str):

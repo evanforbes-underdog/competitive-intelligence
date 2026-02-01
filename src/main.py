@@ -6,23 +6,24 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import json
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add project root to path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
-from utils.config_loader import ConfigLoader
-from utils.logger import Logger
-from utils.error_handler import ErrorType, classify_error
-from database.repository import Repository
-from database.models import Article, Summary, Report, ExecutionLog, create_tables, get_engine
-from collectors.newsapi_collector import NewsAPICollector
-from collectors.web_scraper import WebScraper
-from collectors.appstore_collector import AppStoreCollector
-from collectors.playstore_collector import PlayStoreCollector
-from processors.summarizer import Summarizer
-from processors.categorizer import Categorizer
-from processors.prioritizer import Prioritizer
-from reporting.report_generator import ReportGenerator
-from reporting.email_sender import EmailSender
+from src.utils.config_loader import ConfigLoader
+from src.utils.logger import Logger
+from src.utils.error_handler import ErrorType, classify_error
+from src.database.repository import Repository
+from src.database.models import Article, Summary, Report, ExecutionLog, create_tables, get_engine
+from src.collectors.newsapi_collector import NewsAPICollector
+from src.collectors.web_scraper import WebScraper
+from src.collectors.appstore_collector import AppStoreCollector
+from src.collectors.playstore_collector import PlayStoreCollector
+from src.processors.summarizer import Summarizer
+from src.processors.categorizer import Categorizer
+from src.processors.prioritizer import Prioritizer
+from src.reporting.report_generator import ReportGenerator
+from src.reporting.email_sender import EmailSender
 
 
 class CompetitiveIntelligenceSystem:

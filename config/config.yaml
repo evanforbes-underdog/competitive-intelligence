@@ -29,6 +29,12 @@ competitors:
     android_app_id: "com.robinhood.android"
     priority: medium
 
+  - name: Coinbase
+    keywords: ["coinbase", "coinbase prediction", "coinbase derivatives"]
+    ios_app_id: "886427730"
+    android_app_id: "com.coinbase.android"
+    priority: medium
+
   - name: Betr
     keywords: ["betr", "betr app", "betr sports"]
     ios_app_id: "1615138601"
@@ -71,13 +77,13 @@ collection:
         selector: "article.post"
 
   app_stores:
-    enabled: true
+    enabled: false  # Set to true if app store scrapers are installed
     collect_reviews: false
     collect_ratings: true
 
 processing:
   claude:
-    model: "claude-3-5-sonnet-20241022"
+    model: "claude-3-5-sonnet-20240620"
     max_tokens: 300
     temperature: 0.3
     batch_size: 10
@@ -93,15 +99,15 @@ processing:
     - Other
 
   priority_weights:
-    recency: 0.3
-    source_authority: 0.25
-    category_importance: 0.25
+    recency: 0.25
+    source_authority: 0.2
+    category_importance: 0.35  # Increased for regulatory focus
     competitor_priority: 0.2
 
 reporting:
   email:
     recipients:
-      - evanforbes@example.com
+      - evan.forbes@underdogfantasy.com
     subject: "Weekly Competitive Intelligence Report - {date}"
     from_name: "Competitive Intelligence Bot"
     include_executive_summary: true

@@ -1,16 +1,19 @@
-anthropic==0.18.1
-requests==2.31.0
-python-dotenv==1.0.0
-pyyaml==6.0.1
-sqlalchemy==2.0.23
-beautifulsoup4==4.12.2
-lxml==4.9.3
-app-store-scraper==0.3.5
-google-play-scraper==1.2.4
-jinja2==3.1.2
-tenacity==8.2.3
-ratelimit==2.2.1
-python-dateutil==2.8.2
-pytz==2023.3
-colorlog==6.8.0
-tiktoken==0.5.2
+# Core dependencies
+anthropic>=0.18.0
+requests>=2.23.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+sqlalchemy>=2.0.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+jinja2>=3.1.0
+tenacity>=8.2.0
+python-dateutil>=2.8.0
+pytz>=2023.0
+colorlog>=6.8.0
+tiktoken>=0.5.0
+
+# Optional: App store scrapers (may have dependency conflicts)
+# Uncomment if needed - system works without them
+# app-store-scraper>=0.3.5
+# google-play-scraper>=1.2.4

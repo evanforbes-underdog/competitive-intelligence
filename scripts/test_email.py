@@ -3,12 +3,13 @@
 import sys
 from pathlib import Path
 
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
+# Add project root to path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
-from utils.config_loader import ConfigLoader
-from utils.logger import Logger
-from reporting.email_sender import EmailSender
+from src.utils.config_loader import ConfigLoader
+from src.utils.logger import Logger
+from src.reporting.email_sender import EmailSender
 
 
 def main():
