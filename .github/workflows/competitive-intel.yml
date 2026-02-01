@@ -1,19 +1,14 @@
 name: Competitive Intelligence Report                                                                           
                                                                                                                   
-on:                                                                                                             
+  on:                                                                                                             
     schedule:                                                                                                     
-      # Monday at 8:00 AM EST (13:00 UTC)                                                                         
-      - cron: '0 13 * * 1'                                                                                        
-      # Friday at 8:00 AM EST (13:00 UTC)                                                                         
-      - cron: '0 13 * * 5'                                                                                        
-                                                                                                                  
-    # Allow manual trigger                                                                                        
-    workflow_dispatch:                                                                                            
+      - cron: '0 13 * * 1'  # Monday 8am EST                                                                      
+      - cron: '0 13 * * 5'  # Friday 8am EST                                                                      
+    workflow_dispatch: {}                                                                                         
                                                                                                                   
   jobs:                                                                                                           
     generate-report:                                                                                              
       runs-on: ubuntu-latest                                                                                      
-                                                                                                                  
       steps:                                                                                                      
         - name: Checkout code                                                                                     
           uses: actions/checkout@v3                                                                               
@@ -56,4 +51,4 @@ on:
           with:                                                                                                   
             name: logs-${{ github.run_number }}                                                                   
             path: data/logs/*.log                                                                                 
-            retention-days: 7    
+            retention-days: 7 
