@@ -29,9 +29,10 @@ data/logs/*.log
 # macOS
 .DS_Store
 
-# Reports
+# Reports (exclude generated reports, but keep template)
 reports/
 *.html
+!src/reporting/templates/*.html
 
 # Temporary files
 *.tmp
