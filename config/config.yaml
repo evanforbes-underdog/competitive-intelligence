@@ -1,0 +1,129 @@
+competitors:
+  - name: PrizePicks
+    keywords: ["prizepicks", "prize picks"]
+    ios_app_id: "1437391774"
+    android_app_id: "com.prizepicks"
+    priority: high
+
+  - name: FanDuel
+    keywords: ["fanduel", "fan duel"]
+    ios_app_id: "1021409850"
+    android_app_id: "com.fanduel.android"
+    priority: high
+
+  - name: DraftKings
+    keywords: ["draftkings", "draft kings"]
+    ios_app_id: "1048082025"
+    android_app_id: "com.draftkings.dkngsb"
+    priority: high
+
+  - name: Kalshi
+    keywords: ["kalshi", "kalshi markets"]
+    ios_app_id: "1585648006"
+    android_app_id: "com.kalshi.mobile"
+    priority: high
+
+  - name: Robinhood
+    keywords: ["robinhood", "robinhood markets", "robinhood prediction"]
+    ios_app_id: "938003185"
+    android_app_id: "com.robinhood.android"
+    priority: medium
+
+  - name: Betr
+    keywords: ["betr", "betr app", "betr sports"]
+    ios_app_id: "1615138601"
+    android_app_id: "com.betr.sportsbook"
+    priority: medium
+
+  - name: Fanatics
+    keywords: ["fanatics betting", "fanatics sportsbook"]
+    ios_app_id: "1626871964"
+    android_app_id: "com.fanatics.sportsbook"
+    priority: medium
+
+  - name: BetMGM
+    keywords: ["betmgm", "bet mgm"]
+    ios_app_id: "1457218723"
+    android_app_id: "com.betmgm.android"
+    priority: low
+
+collection:
+  lookback_days: 7
+  max_articles_per_competitor: 50
+
+  newsapi:
+    enabled: true
+    max_requests_per_run: 10
+    search_language: en
+    sort_by: publishedAt
+
+  web_scraping:
+    enabled: true
+    sources:
+      - name: SBC News
+        url: "https://sbcnews.co.uk/sports-betting/"
+        selector: "article.post"
+      - name: Sports Handle
+        url: "https://sportshandle.com/news/"
+        selector: "article"
+      - name: Legal Sports Report
+        url: "https://www.legalsportsreport.com/news/"
+        selector: "article.post"
+
+  app_stores:
+    enabled: true
+    collect_reviews: false
+    collect_ratings: true
+
+processing:
+  claude:
+    model: "claude-3-5-sonnet-20241022"
+    max_tokens: 300
+    temperature: 0.3
+    batch_size: 10
+
+  categories:
+    - Product Updates
+    - Marketing Campaigns
+    - Partnerships
+    - Regulatory News
+    - Promotions
+    - Executive Moves
+    - Funding
+    - Other
+
+  priority_weights:
+    recency: 0.3
+    source_authority: 0.25
+    category_importance: 0.25
+    competitor_priority: 0.2
+
+reporting:
+  email:
+    recipients:
+      - evanforbes@example.com
+    subject: "Weekly Competitive Intelligence Report - {date}"
+    from_name: "Competitive Intelligence Bot"
+    include_executive_summary: true
+    max_executive_items: 5
+
+  report_format:
+    group_by: competitor
+    sort_by: priority
+    include_metadata: true
+
+rate_limits:
+  newsapi_requests_per_day: 100
+  claude_requests_per_minute: 50
+  web_scraping_delay_seconds: 2
+
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "data/logs/competitive_intel.log"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+
+database:
+  path: "data/competitive_intel.db"
+  cache_summaries_days: 30
