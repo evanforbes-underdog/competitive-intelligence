@@ -1,0 +1,214 @@
+{
+  "id": "OTH-37",
+  "slug": "ua-campaign-actuals",
+  "title": "UA Campaign Actuals: Weekly Performance Export",
+  "subtitle": "UA Manager 2 Channels — Meta, TikTok, Google UAC, Snap, Programmatic",
+  "description": "Weekly campaign spend, installs, CPA, and ROAS actuals from UA Manager 2 managed channels. Updated every Monday EOD. Feeds OTH-31 marketing performance dashboard.",
+  "status": "live",
+  "updatedAt": "2026-04-14",
+  "cadence": "Weekly — Monday EOD",
+  "owner": "UA Manager 2",
+  "sourceTask": "OTH-35",
+  "aggregationTask": "OTH-32",
+  "weeks": [
+    {
+      "weekOf": "2026-04-07",
+      "weekLabel": "April 7–13, 2026",
+      "deliveredAt": "2026-04-14",
+      "totals": {
+        "spend": 93600,
+        "installs": 9570,
+        "blendedCPA": 9.78,
+        "blendedROAS": 1.85
+      },
+      "byChannel": [
+        {
+          "channel": "Meta",
+          "spend": 44200,
+          "installs": 4250,
+          "blendedCPA": 10.40,
+          "blendedROAS": 1.8
+        },
+        {
+          "channel": "Google UAC",
+          "spend": 31500,
+          "installs": 3490,
+          "blendedCPA": 9.03,
+          "blendedROAS": 2.2
+        },
+        {
+          "channel": "TikTok",
+          "spend": 9600,
+          "installs": 1030,
+          "blendedCPA": 9.32,
+          "blendedROAS": 1.7
+        },
+        {
+          "channel": "Snapchat",
+          "spend": 3100,
+          "installs": 380,
+          "blendedCPA": 8.16,
+          "blendedROAS": 1.3
+        },
+        {
+          "channel": "Programmatic (DV360)",
+          "spend": 5200,
+          "installs": 420,
+          "blendedCPA": 12.38,
+          "blendedROAS": 1.2
+        }
+      ],
+      "byCampaign": [
+        {
+          "channel": "Meta",
+          "campaign": "Prospecting — Broad",
+          "spend": 18500,
+          "installs": 1850,
+          "cpa": 10.00,
+          "roas": 1.8,
+          "flag": null
+        },
+        {
+          "channel": "Meta",
+          "campaign": "Prospecting — Lookalike",
+          "spend": 12200,
+          "installs": 1100,
+          "cpa": 11.09,
+          "roas": 1.6,
+          "flag": "bottom"
+        },
+        {
+          "channel": "Meta",
+          "campaign": "Retargeting",
+          "spend": 4800,
+          "installs": 520,
+          "cpa": 9.23,
+          "roas": 2.4,
+          "flag": "top"
+        },
+        {
+          "channel": "Meta",
+          "campaign": "Sports Fan Targeting",
+          "spend": 8700,
+          "installs": 780,
+          "cpa": 11.15,
+          "roas": 1.4,
+          "flag": "bottom"
+        },
+        {
+          "channel": "TikTok",
+          "campaign": "UGC Spark Ads",
+          "spend": 6400,
+          "installs": 720,
+          "cpa": 8.89,
+          "roas": 1.9,
+          "flag": "top"
+        },
+        {
+          "channel": "TikTok",
+          "campaign": "In-Feed Trending Hooks",
+          "spend": 3200,
+          "installs": 310,
+          "cpa": 10.32,
+          "roas": 1.5,
+          "flag": null
+        },
+        {
+          "channel": "Google UAC",
+          "campaign": "App Campaign — tCPI",
+          "spend": 22000,
+          "installs": 2600,
+          "cpa": 8.46,
+          "roas": 2.1,
+          "flag": "top"
+        },
+        {
+          "channel": "Google UAC",
+          "campaign": "App Campaign — tROAS",
+          "spend": 9500,
+          "installs": 890,
+          "cpa": 10.67,
+          "roas": 2.3,
+          "flag": null
+        },
+        {
+          "channel": "Snapchat",
+          "campaign": "Snap Audience Network",
+          "spend": 3100,
+          "installs": 380,
+          "cpa": 8.16,
+          "roas": 1.3,
+          "flag": null
+        },
+        {
+          "channel": "Programmatic",
+          "campaign": "DV360 — Sports Content",
+          "spend": 5200,
+          "installs": 420,
+          "cpa": 12.38,
+          "roas": 1.2,
+          "flag": "bottom"
+        }
+      ],
+      "topCampaigns": [
+        {
+          "rank": 1,
+          "channel": "Google UAC",
+          "campaign": "App Campaign — tCPI",
+          "cpa": 8.46,
+          "roas": 2.1,
+          "note": "Highest volume + efficiency combo"
+        },
+        {
+          "rank": 2,
+          "channel": "Snapchat",
+          "campaign": "Snap Audience Network",
+          "cpa": 8.16,
+          "roas": 1.3,
+          "note": "Lean spend, solid CPA rate"
+        },
+        {
+          "rank": 3,
+          "channel": "Meta",
+          "campaign": "Retargeting",
+          "cpa": 9.23,
+          "roas": 2.4,
+          "note": "Best ROAS in portfolio"
+        }
+      ],
+      "bottomCampaigns": [
+        {
+          "rank": 1,
+          "channel": "Programmatic",
+          "campaign": "DV360 — Sports Content",
+          "cpa": 12.38,
+          "roas": 1.2,
+          "action": "Reduce DV360 budget 20%, reallocate to Google UAC tCPI"
+        },
+        {
+          "rank": 2,
+          "channel": "Meta",
+          "campaign": "Sports Fan Targeting",
+          "cpa": 11.15,
+          "roas": 1.4,
+          "action": "Creative refresh or audience tightening"
+        },
+        {
+          "rank": 3,
+          "channel": "Meta",
+          "campaign": "Prospecting — Lookalike",
+          "cpa": 11.09,
+          "roas": 1.6,
+          "action": "Test new seed audience this week"
+        }
+      ],
+      "flags": [
+        "Programmatic DV360 above $10.00 CPA threshold — recommend 20% budget reduction",
+        "TikTok UGC Spark Ads continue to outperform in-feed — prioritize new UGC creative sourcing",
+        "Meta Prospecting Lookalike showing fatigue — test new seed audience",
+        "ROAS data sourced from AppsFlyer — 7-day attribution window, deposit conversion event"
+      ]
+    }
+  ],
+  "body": "# UA Campaign Actuals: Weekly Performance Export\n**UA Manager 2 | Channels: Meta, TikTok, Google UAC, Snapchat, Programmatic**\n\n---\n\n## Week of April 7–13, 2026\n\n### Channel Totals\n\n| Channel | Spend | Installs | Blended CPA | Blended ROAS |\n|---|---|---|---|---|\n| Meta | $44,200 | 4,250 | $10.40 | 1.8x |\n| Google UAC | $31,500 | 3,490 | $9.03 | 2.2x |\n| TikTok | $9,600 | 1,030 | $9.32 | 1.7x |\n| Snapchat | $3,100 | 380 | $8.16 | 1.3x |\n| Programmatic | $5,200 | 420 | $12.38 | 1.2x |\n| **TOTAL** | **$93,600** | **9,570** | **$9.78** | **1.85x** |\n\n### Campaign-Level Breakdown\n\n| Channel | Campaign | Spend | Installs | CPA | ROAS | Flag |\n|---|---|---|---|---|---|---|\n| Meta | Prospecting — Broad | $18,500 | 1,850 | $10.00 | 1.8x | — |\n| Meta | Prospecting — Lookalike | $12,200 | 1,100 | $11.09 | 1.6x | ⚠️ Bottom |\n| Meta | Retargeting | $4,800 | 520 | $9.23 | 2.4x | ✅ Top |\n| Meta | Sports Fan Targeting | $8,700 | 780 | $11.15 | 1.4x | ⚠️ Bottom |\n| TikTok | UGC Spark Ads | $6,400 | 720 | $8.89 | 1.9x | ✅ Top |\n| TikTok | In-Feed Trending Hooks | $3,200 | 310 | $10.32 | 1.5x | — |\n| Google UAC | App Campaign — tCPI | $22,000 | 2,600 | $8.46 | 2.1x | ✅ Top |\n| Google UAC | App Campaign — tROAS | $9,500 | 890 | $10.67 | 2.3x | — |\n| Snapchat | Snap Audience Network | $3,100 | 380 | $8.16 | 1.3x | — |\n| Programmatic | DV360 — Sports Content | $5,200 | 420 | $12.38 | 1.2x | ⚠️ Bottom |\n\n### Top Campaigns\n1. **Google UAC tCPI** — $8.46 CPA / 2.1x ROAS (highest volume + efficiency)\n2. **Snapchat Audience Network** — $8.16 CPA (lean but efficient)\n3. **Meta Retargeting** — $9.23 CPA / 2.4x ROAS (best ROAS)\n\n### Bottom Campaigns (Action Required)\n1. **Programmatic DV360** — $12.38 CPA → reduce budget 20%, shift to Google UAC\n2. **Meta Sports Fan Targeting** — $11.15 CPA → creative refresh or audience tightening\n3. **Meta Prospecting Lookalike** — $11.09 CPA → test new seed audience\n\n---\n\n*Updated every Monday EOD. Feeds [OTH-31](/OTH/issues/OTH-31) via [OTH-32](/OTH/issues/OTH-32). Source: [OTH-35](/OTH/issues/OTH-35).*"
+}

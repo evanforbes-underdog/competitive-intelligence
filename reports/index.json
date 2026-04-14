@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "competitive-intel",
+    "title": "Competitive Intel Report: Fantasy Sports & Online Betting",
+    "subtitle": "Summer + NFL Season 2026",
+    "description": "Deep competitive analysis of fantasy sports and online betting landscape for Summer 2026 and NFL season.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "Competitive Intel Analyst"
+  },
+  {
+    "slug": "summer-ua-strategy",
+    "title": "UA & Paid Media Strategy: Summer 2026",
+    "subtitle": "World Cup + NBA Finals",
+    "description": "User acquisition and paid media strategy for Summer 2026 major sporting events.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "UA Strategist"
+  },
+  {
+    "slug": "nfl-ua-strategy",
+    "title": "UA & Paid Media Strategy: NFL Season 2026",
+    "subtitle": "Draft Season + Regular Season",
+    "description": "Comprehensive UA and paid media strategy for NFL Draft through Regular Season 2026.",
+    "status": "in_progress",
+    "completedAt": null,
+    "owner": "UA Strategist"
+  },
+  {
+    "slug": "aso-strategy",
+    "title": "ASO Strategy: Summer + NFL 2026",
+    "subtitle": "App Store Optimization",
+    "description": "App Store Optimization strategy to maximize organic downloads and rankings for Summer and NFL seasons.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "ASO Specialist"
+  },
+  {
+    "slug": "creative-strategy",
+    "title": "Creative Strategy & Briefs: Summer + NFL 2026",
+    "subtitle": "Ad Creative Direction",
+    "description": "Creative briefs and strategy for paid media ad creative across Summer 2026 and NFL season campaigns.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "Creative Strategist"
+  },
+  {
+    "slug": "seo-keyword-strategy",
+    "title": "SEO & Keyword Strategy: World Cup 2026 + Fantasy Football 2026",
+    "subtitle": "Organic Search",
+    "description": "SEO and keyword strategy targeting World Cup 2026 and Fantasy Football 2026 search demand.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "SEO Specialist"
+  },
+  {
+    "slug": "measurement-framework",
+    "title": "Measurement Framework: Summer + NFL 2026 Marketing Campaigns",
+    "subtitle": "Attribution & Analytics",
+    "description": "Measurement framework, KPIs, and attribution approach for Summer and NFL 2026 marketing campaigns.",
+    "status": "done",
+    "completedAt": "2026-04-13",
+    "owner": "Analytics Lead"
+  },
+  {
+    "slug": "competitor-ad-intel",
+    "title": "Competitor Ad Intelligence: Daily Creative Feed",
+    "subtitle": "Meta Ad Library — PrizePicks, DraftKings, FanDuel, ESPN Bet, Sleeper",
+    "description": "Top-spending and highest-impression competitor ads across Meta platforms. Updated daily. Shows what each competitor is running, how long it's been live, and spend/impression tiers.",
+    "status": "live",
+    "cadence": "Daily",
+    "updatedAt": "2026-04-14",
+    "owner": "CMO"
+  },
+  {
+    "slug": "ua-campaign-actuals",
+    "title": "UA Campaign Actuals: Weekly Performance Export",
+    "subtitle": "UA Manager 2 Channels — Meta, TikTok, Google UAC, Snap, Programmatic",
+    "description": "Weekly campaign spend, installs, CPA, and ROAS actuals from UA Manager 2 managed channels. Updated every Monday EOD.",
+    "status": "live",
+    "completedAt": null,
+    "updatedAt": "2026-04-14",
+    "owner": "UA Manager 2"
+  }
+]

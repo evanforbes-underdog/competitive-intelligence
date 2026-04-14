@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Underdog Fantasy — Marketing Reports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="border-b border-gray-800 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-bold tracking-tight text-white">Underdog Fantasy</h1>
+        <p class="text-sm text-gray-400 mt-0.5">Marketing Reports Dashboard</p>
+      </div>
+      <div class="text-xs text-gray-500 uppercase tracking-widest">Summer + NFL 2026</div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-white">Reports</h2>
+      <p class="text-gray-400 mt-1 text-sm">Marketing strategy reports for Summer 2026 and NFL Season campaigns.</p>
+    </div>
+
+    <!-- Status summary (populated by JS) -->
+    <div id="status-summary" class="mb-8 flex gap-4 text-sm"></div>
+
+    <!-- Report cards grid -->
+    <div id="reports-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Loading skeleton -->
+      <div class="col-span-full text-center py-16 text-gray-500" id="loading-msg">
+        Loading reports...
+      </div>
+    </div>
+
+    <!-- Error message -->
+    <div id="error-msg" class="hidden col-span-full text-center py-16">
+      <p class="text-red-400 font-medium">Failed to load reports.</p>
+      <p class="text-gray-500 text-sm mt-1">Make sure build.js has been run and reports/index.json exists.</p>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-800 mt-16">
+    <div class="max-w-6xl mx-auto px-6 py-4 text-xs text-gray-600 flex justify-between">
+      <span>Underdog Fantasy — Internal Use Only</span>
+      <span id="last-updated"></span>
+    </div>
+  </footer>
+
+  <script>
+    function statusBadge(status) {
+      if (status === 'done') {
+        return `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-900 text-emerald-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block"></span>Done
+        </span>`;
+      }
+      if (status === 'live') {
+        return `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-cyan-900 text-cyan-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse inline-block"></span>Live
+        </span>`;
+      }
+      return `<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-900 text-amber-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse inline-block"></span>In Progress
+      </span>`;
+    }
+
+    // Slug-to-custom-page mapping for reports that use dedicated HTML views
+    const CUSTOM_PAGES = {
+      'competitor-ad-intel': 'competitor-ad-intel.html',
+      'ua-campaign-actuals': 'ua-campaign-actuals.html',
+    };
+
+    function renderCard(report) {
+      const isDone = report.status === 'done';
+      const isLive = report.status === 'live';
+      const customPage = CUSTOM_PAGES[report.slug];
+      const isViewable = isDone || (isLive && customPage);
+
+      let viewLink;
+      if (isDone) {
+        viewLink = `<a href="report.html?report=${report.slug}" class="inline-flex items-center gap-1 text-sm font-medium text-indigo-400 hover:text-indigo-300 transition-colors">
+            View Report
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+           </a>`;
+      } else if (isLive && customPage) {
+        viewLink = `<a href="${customPage}" class="inline-flex items-center gap-1 text-sm font-medium text-cyan-400 hover:text-cyan-300 transition-colors">
+            View Live Data
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+           </a>`;
+      } else {
+        viewLink = `<span class="text-sm text-gray-600 italic">In progress...</span>`;
+      }
+
+      const completedLine = isDone && report.completedAt
+        ? `<p class="text-xs text-gray-500 mt-1">Completed ${report.completedAt}</p>`
+        : '';
+
+      return `
+        <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 flex flex-col gap-3 hover:border-gray-700 transition-colors ${isViewable ? 'cursor-pointer' : ''}">
+          <div class="flex items-start justify-between gap-3">
+            <h3 class="font-semibold text-white text-sm leading-snug">${report.title}</h3>
+            ${statusBadge(report.status)}
+          </div>
+          ${report.subtitle ? `<p class="text-xs font-medium text-indigo-400 uppercase tracking-wide">${report.subtitle}</p>` : ''}
+          <p class="text-sm text-gray-400 leading-relaxed flex-1">${report.description || ''}</p>
+          <div class="flex items-center justify-between pt-1 border-t border-gray-800">
+            <span class="text-xs text-gray-600">${report.owner || ''}</span>
+            ${viewLink}
+          </div>
+          ${completedLine}
+        </div>
+      `;
+    }
+
+    async function loadReports() {
+      const grid = document.getElementById('reports-grid');
+      const loadingMsg = document.getElementById('loading-msg');
+      const errorMsg = document.getElementById('error-msg');
+      const statusSummary = document.getElementById('status-summary');
+      const lastUpdated = document.getElementById('last-updated');
+
+      try {
+        const res = await fetch('reports/index.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const reports = await res.json();
+
+        // Remove loading message
+        loadingMsg.remove();
+
+        // Render status summary
+        const done = reports.filter(r => r.status === 'done').length;
+        const live = reports.filter(r => r.status === 'live').length;
+        const total = reports.length;
+        statusSummary.innerHTML = `
+          <div class="flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2">
+            <span class="text-white font-semibold">${done + live}/${total}</span>
+            <span class="text-gray-400">reports available</span>
+          </div>
+          <div class="flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
+            <span class="text-gray-400">${done} done</span>
+          </div>
+          ${live > 0 ? `<div class="flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse inline-block"></span>
+            <span class="text-gray-400">${live} live feeds</span>
+          </div>` : ''}
+          <div class="flex items-center gap-2 bg-gray-900 border border-gray-800 rounded-lg px-4 py-2">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse inline-block"></span>
+            <span class="text-gray-400">${total - done - live} in progress</span>
+          </div>
+        `;
+
+        // Render cards
+        grid.innerHTML = reports.map(renderCard).join('');
+
+        // Last updated
+        lastUpdated.textContent = `Last built: ${new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+
+      } catch (err) {
+        loadingMsg.classList.add('hidden');
+        errorMsg.classList.remove('hidden');
+        document.getElementById('reports-grid').appendChild(errorMsg);
+        console.error('Failed to load reports/index.json:', err);
+      }
+    }
+
+    loadReports();
+  </script>
+</body>
+</html>

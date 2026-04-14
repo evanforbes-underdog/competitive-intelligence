@@ -1,0 +1,11 @@
+{
+  "id": "OTH-27",
+  "slug": "measurement-framework",
+  "title": "Measurement Framework: Summer + NFL 2026 Marketing Campaigns",
+  "subtitle": "Attribution & Analytics",
+  "description": "Measurement framework, KPIs, and attribution approach for Summer and NFL 2026 marketing campaigns.",
+  "status": "done",
+  "completedAt": "2026-04-13",
+  "owner": "Analytics Lead",
+  "body": "## Measurement Framework Complete\n\nFull structured measurement plan published at [OTH-27#document-plan](/OTH/issues/OTH-27#document-plan).\n\n**Covers all 7 deliverables:**\n\n1. **KPI dashboard structure** — Daily Pulse (CPA, installs, activation), Weekly Performance (D7 retention, ROAS proxy, creative fatigue), Monthly Cohort (D30/D90, LTV:CAC, CAC payback)\n2. **Attribution model by channel** — MMP Last-Touch for Meta/Google/TikTok as budget truth; VTA for YouTube (directional only); MMM-only for OOH/Creator/Podcast. Decision tree included.\n3. **World Cup measurement plan** — Baseline lock by May 1; geo holdout as primary incremental method; KPI thresholds with go/no-go rules (>2x NFL CPA = reduce budget)\n4. **NFL season plan** — Best Ball cohort tagging in AppsFlyer; Week 1 as LTV control benchmark; draft-season vs. regular-season quality comparison table; weekly cohort dashboard spec\n5. **Incrementality test design** — Meta Geo-Holdout (P1): 5–6 DMAs, 3-week test, 90% CI z-test, decision rules at 10%/20% lift thresholds. Secondary: Google UAC Conversion Lift or DMA pause.\n6. **Retention guardrails** — Hard gates by metric (D7 ≥35%, D30 ≥18%, entry rate ≥20%, LTV:CAC ≥1.5:1) with channel-level scale gates and budget-tier escalation (Tier 1/2/3)\n7. **Attribution blind spots** — iOS privacy/SKAdNetwork gaps, cross-device blind spots, organic halo (biggest structural risk for fantasy sports), last-touch bias, creator attribution gap, LTV time-lag bias\n\n**Immediate next steps flagged (P0):**\n- Lock baseline metrics in AppsFlyer by Apr 30\n- Confirm MMP attribution windows by channel by Apr 25"
+}

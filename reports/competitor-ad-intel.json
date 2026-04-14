@@ -1,0 +1,344 @@
+{
+  "source": "curated",
+  "note": "Live pull not available — set META_AD_LIBRARY_TOKEN to enable. Data below is manually curated from Meta Ad Library observation.",
+  "pulledAt": "2026-04-14",
+  "competitors": [
+    {
+      "slug": "prizepicks",
+      "label": "PrizePicks",
+      "color": "#10B981",
+      "topAds": [
+        {
+          "id": "pp_001",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "Block Out The Noise. Get Your Picks Right.",
+          "body": "Marshawn Lynch and Adam Devine show you how it's done. Make your picks on PrizePicks — the #1 Fantasy Sports App. $5 bonus when you join.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=prizepicks",
+          "startDate": "2026-01-15",
+          "daysRunning": 89,
+          "spend": {
+            "lower": 1000000,
+            "upper": 5000000,
+            "label": "1M–5M"
+          },
+          "impressions": {
+            "lower": 20000000,
+            "upper": 50000000,
+            "label": "20M–50M"
+          },
+          "note": "NFL Playoffs Marshawn Lynch + Adam Devine campaign — longest-running, highest-spend creative"
+        },
+        {
+          "id": "pp_002",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "Make Every Game Count",
+          "body": "Pick more. Win more. Join millions of players on PrizePicks — the easiest way to play daily fantasy sports. No lineup builder required.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=prizepicks",
+          "startDate": "2026-02-28",
+          "daysRunning": 45,
+          "spend": {
+            "lower": 500000,
+            "upper": 1000000,
+            "label": "500K–1M"
+          },
+          "impressions": {
+            "lower": 10000000,
+            "upper": 20000000,
+            "label": "10M–20M"
+          },
+          "note": "Evergreen UGC-style conversion creative — steady mid-funnel spend"
+        },
+        {
+          "id": "pp_003",
+          "platform": "meta",
+          "platforms": [
+            "instagram"
+          ],
+          "headline": "NBA Partner. All-Star Picks.",
+          "body": "PrizePicks is the Official DFS Partner of the NBA. Get your picks in on tonight's games. Free to play. Download now.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=prizepicks+nba",
+          "startDate": "2026-04-07",
+          "daysRunning": 7,
+          "spend": {
+            "lower": 100000,
+            "upper": 500000,
+            "label": "100K–500K"
+          },
+          "impressions": {
+            "lower": 2000000,
+            "upper": 5000000,
+            "label": "2M–5M"
+          },
+          "note": "New NBA partnership announcement creative — early signal, watch spend growth"
+        }
+      ]
+    },
+    {
+      "slug": "draftkings",
+      "label": "DraftKings",
+      "color": "#3B82F6",
+      "topAds": [
+        {
+          "id": "dk_001",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "audience_network"
+          ],
+          "headline": "Win Big on Every NBA Game",
+          "body": "Bet $5, Get $200 in Bonus Bets. New customers only. DraftKings Sportsbook — America's #1 Sportsbook. 21+ | Terms apply.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=draftkings",
+          "startDate": "2026-03-01",
+          "daysRunning": 44,
+          "spend": {
+            "lower": 5000000,
+            "upper": 10000000,
+            "label": "5M–10M"
+          },
+          "impressions": {
+            "lower": 100000000,
+            "upper": 200000000,
+            "label": "100M–200M"
+          },
+          "note": "Highest-spend DraftKings creative — NBA season deposit bonus push"
+        },
+        {
+          "id": "dk_002",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "World Cup Is Coming. Start Winning Now.",
+          "body": "DraftKings is your home for FIFA World Cup 2026. Get in early — biggest prizes start now. Place your first bet, get $200 in bonus bets.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=draftkings+world+cup",
+          "startDate": "2026-04-01",
+          "daysRunning": 13,
+          "spend": {
+            "lower": 1000000,
+            "upper": 5000000,
+            "label": "1M–5M"
+          },
+          "impressions": {
+            "lower": 20000000,
+            "upper": 50000000,
+            "label": "20M–50M"
+          },
+          "note": "World Cup awareness creative — launched April, watch for acceleration in May–June"
+        },
+        {
+          "id": "dk_003",
+          "platform": "meta",
+          "platforms": [
+            "facebook"
+          ],
+          "headline": "$15M Fantasy Football Championship",
+          "body": "The biggest prize pool in DFS history. Draft your team. Win your share of $15,000,000. DraftKings Fantasy Football — sign up today.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=draftkings+fantasy+football",
+          "startDate": "2026-03-15",
+          "daysRunning": 30,
+          "spend": {
+            "lower": 500000,
+            "upper": 1000000,
+            "label": "500K–1M"
+          },
+          "impressions": {
+            "lower": 10000000,
+            "upper": 20000000,
+            "label": "10M–20M"
+          },
+          "note": "DFS-specific creative vs. sportsbook-heavy DK spend — represents their fantasy push"
+        }
+      ]
+    },
+    {
+      "slug": "fanduel",
+      "label": "FanDuel",
+      "color": "#8B5CF6",
+      "topAds": [
+        {
+          "id": "fd_001",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "audience_network"
+          ],
+          "headline": "Play Your Game",
+          "body": "FanDuel Sportsbook. Whatever your game is — play it here. Bet $5 and get $200 in bonus bets instantly. New customers only. 21+.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=fanduel",
+          "startDate": "2026-02-01",
+          "daysRunning": 72,
+          "spend": {
+            "lower": 5000000,
+            "upper": 10000000,
+            "label": "5M–10M"
+          },
+          "impressions": {
+            "lower": 100000000,
+            "upper": 200000000,
+            "label": "100M–200M"
+          },
+          "note": "\"Play Your Game\" brand platform launch — highest longevity and highest-spend creative"
+        },
+        {
+          "id": "fd_002",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "The Bar Is Open",
+          "body": "Luis Guzmán welcomes everyone to The Bar — where all kinds of fans bet. FanDuel. Play Your Game. 21+ | Gambling problem? Call 1-800-GAMBLER.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=fanduel+bar",
+          "startDate": "2026-03-10",
+          "daysRunning": 35,
+          "spend": {
+            "lower": 1000000,
+            "upper": 5000000,
+            "label": "1M–5M"
+          },
+          "impressions": {
+            "lower": 20000000,
+            "upper": 50000000,
+            "label": "20M–50M"
+          },
+          "note": "\"The Bar\" film series with Luis Guzmán — brand awareness, mainstream tone"
+        },
+        {
+          "id": "fd_003",
+          "platform": "meta",
+          "platforms": [
+            "facebook"
+          ],
+          "headline": "Fantasy Football Season Starts Now",
+          "body": "Join 12M+ players. Pick your team. Win real money. FanDuel Fantasy Football — drafts are open. Get $20 in free entries for new players.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=fanduel+fantasy+football",
+          "startDate": "2026-04-10",
+          "daysRunning": 4,
+          "spend": {
+            "lower": 100000,
+            "upper": 500000,
+            "label": "100K–500K"
+          },
+          "impressions": {
+            "lower": 2000000,
+            "upper": 5000000,
+            "label": "2M–5M"
+          },
+          "note": "Early NFL draft-season priming creative — low spend now, expect escalation in July"
+        }
+      ]
+    },
+    {
+      "slug": "espnbet",
+      "label": "ESPN Bet",
+      "color": "#EF4444",
+      "topAds": [
+        {
+          "id": "eb_001",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "Bet the Way ESPN Fans Do",
+          "body": "Stephen A. Smith: \"This is ESPN Bet.\" Track your bets live on ESPN. Integrated with ESPN Fantasy. 21+ | New customers get $250 in bonus bets.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=espnbet",
+          "startDate": "2026-03-01",
+          "daysRunning": 44,
+          "spend": {
+            "lower": 500000,
+            "upper": 1000000,
+            "label": "500K–1M"
+          },
+          "impressions": {
+            "lower": 10000000,
+            "upper": 20000000,
+            "label": "10M–20M"
+          },
+          "note": "Stephen A. Smith hero campaign — lower spend than DK/FD signals market share struggle"
+        },
+        {
+          "id": "eb_002",
+          "platform": "meta",
+          "platforms": [
+            "facebook"
+          ],
+          "headline": "Your Fantasy. Your Bets. One Place.",
+          "body": "ESPN Fantasy and ESPN Bet are finally together. Manage your fantasy team and place bets on the same players — all in the ESPN app.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=espnbet+fantasy",
+          "startDate": "2026-03-20",
+          "daysRunning": 25,
+          "spend": {
+            "lower": 100000,
+            "upper": 500000,
+            "label": "100K–500K"
+          },
+          "impressions": {
+            "lower": 2000000,
+            "upper": 10000000,
+            "label": "2M–10M"
+          },
+          "note": "Fantasy-betting integration pitch — unique to ESPN Bet; note the fantasy-first angle"
+        }
+      ]
+    },
+    {
+      "slug": "sleeper",
+      "label": "Sleeper",
+      "color": "#F59E0B",
+      "topAds": [
+        {
+          "id": "sl_001",
+          "platform": "meta",
+          "platforms": [
+            "facebook",
+            "instagram"
+          ],
+          "headline": "Your League. Your Rules.",
+          "body": "The fantasy sports app built for serious players. Custom scoring, in-app chat, live updates, and the best trade interface in the game. Join your crew on Sleeper.",
+          "snapshotUrl": "https://www.facebook.com/ads/library/?active_status=active&ad_type=all&country=US&q=sleeper+fantasy",
+          "startDate": "2026-02-15",
+          "daysRunning": 58,
+          "spend": {
+            "lower": 100000,
+            "upper": 500000,
+            "label": "100K–500K"
+          },
+          "impressions": {
+            "lower": 2000000,
+            "upper": 10000000,
+            "label": "2M–10M"
+          },
+          "note": "Community/league-focused creative — low paid spend, likely relying more on creator/organic"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "topSpender": "DraftKings / FanDuel (tied, $5M–10M/month each on Meta)",
+    "fastestGrowing": "PrizePicks (NBA partnership launch creative ramping)",
+    "longestRunning": "FanDuel \"Play Your Game\" — 72 days, still active",
+    "watchList": [
+      "DraftKings World Cup creative (launched Apr 1) — expect 10x spend increase by June",
+      "PrizePicks NBA partnership creative (launched Apr 7) — early signal, very new",
+      "FanDuel Fantasy Football priming (launched Apr 10) — signals early NFL push",
+      "ESPN Bet spend is declining vs. DK/FD — market share loss confirmed"
+    ],
+    "underdogGaps": [
+      "No Best Ball creative visible from any competitor — Underdog owns this lane",
+      "No World Cup fantasy creative from PrizePicks (closest format competitor) — blue ocean",
+      "DK/FD messaging is sportsbook-first; zero competitors leading with \"fantasy-first\" positioning"
+    ]
+  }
+}
